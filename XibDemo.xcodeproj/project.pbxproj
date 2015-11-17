@@ -13,6 +13,8 @@
 		CDF9FF511BFAD9620043D50C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF9FF4F1BFAD9620043D50C /* Main.storyboard */; };
 		CDF9FF531BFAD9620043D50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF9FF521BFAD9620043D50C /* Assets.xcassets */; };
 		CDF9FF561BFAD9620043D50C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF9FF541BFAD9620043D50C /* LaunchScreen.storyboard */; };
+		CDF9FF621BFAD9B60043D50C /* HXXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF9FF611BFAD9B60043D50C /* HXXibView.m */; };
+		CDF9FFAB1BFB14770043D50C /* HXXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF9FFAA1BFB14770043D50C /* HXXibView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		CDF9FF521BFAD9620043D50C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF9FF551BFAD9620043D50C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDF9FF571BFAD9620043D50C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF9FF601BFAD9B60043D50C /* HXXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXXibView.h; sourceTree = "<group>"; };
+		CDF9FF611BFAD9B60043D50C /* HXXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXXibView.m; sourceTree = "<group>"; };
+		CDF9FFAA1BFB14770043D50C /* HXXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXXibView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		CDF9FF451BFAD9620043D50C /* XibDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CDF9FF5D1BFAD99E0043D50C /* HXXibView */,
 				CDF9FF491BFAD9620043D50C /* AppDelegate.h */,
 				CDF9FF4A1BFAD9620043D50C /* AppDelegate.m */,
 				CDF9FF4C1BFAD9620043D50C /* ViewController.h */,
@@ -77,6 +83,16 @@
 				CDF9FF471BFAD9620043D50C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDF9FF5D1BFAD99E0043D50C /* HXXibView */ = {
+			isa = PBXGroup;
+			children = (
+				CDF9FF601BFAD9B60043D50C /* HXXibView.h */,
+				CDF9FF611BFAD9B60043D50C /* HXXibView.m */,
+				CDF9FFAA1BFB14770043D50C /* HXXibView.xib */,
+			);
+			path = HXXibView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF9FFAB1BFB14770043D50C /* HXXibView.xib in Resources */,
 				CDF9FF561BFAD9620043D50C /* LaunchScreen.storyboard in Resources */,
 				CDF9FF531BFAD9620043D50C /* Assets.xcassets in Resources */,
 				CDF9FF511BFAD9620043D50C /* Main.storyboard in Resources */,
@@ -149,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF9FF621BFAD9B60043D50C /* HXXibView.m in Sources */,
 				CDF9FF4E1BFAD9620043D50C /* ViewController.m in Sources */,
 				CDF9FF4B1BFAD9620043D50C /* AppDelegate.m in Sources */,
 				CDF9FF481BFAD9620043D50C /* main.m in Sources */,
@@ -261,7 +279,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = XibDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miamusic.XibDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +292,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = XibDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miamusic.XibDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +320,7 @@
 				CDF9FF5C1BFAD9620043D50C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
